@@ -1,7 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-import { HomePage } from './-home-page'
-
 export const Route = createFileRoute('/')({
   validateSearch: (
     search: Record<string, unknown>,
@@ -35,6 +33,4 @@ export const Route = createFileRoute('/')({
         ? search.limit
         : 10,
   }),
-
-  component: HomePage,
 })
